@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private For CHIKKY 🌙</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(to bottom, #fafcfd, #8bdaf4, #04b1fc);
+            color: rgb(0, 1, 0);
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            width: 200px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            background: gold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #content {
+            display: none;
+            margin-top: 40px;
+        }
+
+        img {
+            width: 450px;
+            border-radius: 25px;
+            margin: 20px;
+            box-shadow: 0 0 25px white;
+        }
+
+        .proposal {
+            font-family: 'Dancing Script', cursive;
+            font-size: 32px;
+            color: gold;
+            margin-top: 30px;
+        }
+
+        #error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container" id="login">
+    <h1>Private Letter 🌙</h1>
+    <p>Enter the secret password to unlock 💌</p>
+    <input type="password" id="password" placeholder="Enter password">
+    <br>
+    <button onclick="checkPassword()">Unlock</button>
+    <div id="error"></div>
+</div>
+
+<div id="content">
+
+    <h1>For CHIKKY 🌙</h1>
+
+    <img src="photo1.jpg" alt="Our Memory">
+
+    <div style="width:75%; margin:auto; text-align:left; line-height:1.8; font-size:18px;">
+
+        <p>
+I’ve been trying to find the right words all day, but they all feel a bit too small for how I actually feel about you.
+        Whenever I think of "us," my mind always races back to that farewell day.
+        Seeing you in that blue and white langavoni… it wasn’t just that you looked beautiful — you were breathtaking.
+        It was the moment I realized I never wanted to look at anyone else.        </p>
+
+        <p>
+I’m still captivated by that girl, and I think I always will be.
+        What hits me the hardest, Chikky, is how you’ve stayed so purely you.
+        In a world that’s always trying to change people, you’ve remained the same soul I fell for on day one.
+        Your heart hasn’t shifted an inch, and having that kind of “constant” in my life is the greatest gift I’ve ever received.        </p>
+
+        <p>
+It’s the quiet moments that mean the most to me now — like the way you feed me.
+        It’s such a simple, tender act, but it makes me feel safe and truly seen.
+        And I know I tease you, but I genuinely adore everything about you,
+        right down to your nose.
+        It’s perfect because it’s yours,
+        and it’s part of the face that represents “home” to me.        </p>
+         <p>
+        Thank you for being my beautiful memory and my even better reality.
+        I love you more than these words can even begin to show.
+        I don’t just want you in my memories of the past;
+        I want you in every single one of my memories in the future.
+    </p>
+     <p>
+        I love your smile.  
+        I love your heart.  
+        And I love that cute nose of yours more than I can say.
+    </p>
+
+    <div class="proposal">
+        Chikky…<br><br>
+        LETS MAKE MEMORIES TOGETHER.<br>
+        UNTIL DEATH TEARS US APART
+    </div>
+
+    </div>
+
+</div>
+
+<script>
+function checkPassword() {
+    var password = document.getElementById("password").value;
+
+    if (password === "bhubhu") {   // 🔐 CHANGE THIS PASSWORD
+        document.getElementById("login").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    } else {
+        document.getElementById("error").innerHTML = "Wrong password 💔";
+    }
+}
+</script>
+
+</body>
+</html>
